@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+{% block content %}
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <div class="row">
+
+                        <div class="col-lg-6 mb-4">
+
+                            <!-- Illustrations -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Converted Text</h6>
+                                </div>
+                                <div class="card-body text-justify">
+                                    <div class="text-center text-justify">
+                                        <!--img class="img-fluid px-3 px-sm-4 mt-3 mb-4" 
+                                            style="float:center;width:100%;height:100%;object-fit:fill;"
+                                            src="static/img/test.jpg" alt="..."-->
+                                    </div>
+                                    <p>{{ symptoms }}</p>
+                                    
+                                </div>
+                            </div>
+
+                            <form class="user" action="" method="post" enctype="multipart/form-data">
+                                <button class="btn btn-primary btn-user btn-block">
+                                    Speak
+                                </button>
+                            </form>
+
+                        </div>
+                  
+                   
+
+
+                   
+
+                        <div class="col-lg-6 mb-4">
+
+                            <!-- Illustrations -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Generated Sign</h6>
+                                </div>
+                                <div class="card-body text-justify">
+                                    <div class="text-center text-justify">
+                                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" 
+                                            style="float:center;width:100%;height:100%;object-fit:fill;"
+                                            src="{{ url_for('video_stream1') }}" alt="..."-->
+                                    </div>
+                                  
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+                  
+                    </div>
+
+
+{% endblock %}
+
+</div>

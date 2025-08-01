@@ -1,0 +1,21 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+sign_env/
+
+# Environment
+.env
+*.env
+
+# Database
+*.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Model checkpoints
+*.h5
